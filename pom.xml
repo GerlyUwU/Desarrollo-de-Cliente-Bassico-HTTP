@@ -28,14 +28,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Dependencia para manejar la interfaz gráfica (JavaFX si decides usarla en el futuro) -->
-        <!--
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>17.0.1</version>
-        </dependency>
-        -->
+
 
     </dependencies>
 
