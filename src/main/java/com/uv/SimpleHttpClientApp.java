@@ -33,14 +33,14 @@ public class SimpleHttpClientApp {
     }
 
     private void initialize() {
-        // Configuración de la ventana
+        
         frame = new JFrame();
         frame.setTitle("HTTP Client");
         frame.setBounds(100, 100, 600, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(new BorderLayout(0, 0));
 
-        // Panel superior para URL y método
+       
         JPanel topPanel = new JPanel();
         frame.getContentPane().add(topPanel, BorderLayout.NORTH);
         topPanel.setLayout(new FlowLayout());
@@ -55,7 +55,7 @@ public class SimpleHttpClientApp {
         methodComboBox = new JComboBox<>(new String[]{"GET", "POST", "PUT", "DELETE"});
         topPanel.add(methodComboBox);
 
-        // Panel central para cuerpo y cabeceras
+        
         JTabbedPane tabbedPane = new JTabbedPane();
         frame.getContentPane().add(tabbedPane, BorderLayout.CENTER);
 
@@ -67,7 +67,7 @@ public class SimpleHttpClientApp {
         JScrollPane scrollPane2 = new JScrollPane(responseHeadersArea);
         tabbedPane.addTab("Cabeceras", scrollPane2);
 
-        // Panel inferior para opciones de visualización y botones
+        
         JPanel bottomPanel = new JPanel();
         frame.getContentPane().add(bottomPanel, BorderLayout.SOUTH);
 
@@ -94,7 +94,7 @@ public class SimpleHttpClientApp {
         mimeLabel = new JLabel("MIME: ");
         bottomPanel.add(mimeLabel);
 
-        // Acciones de los botones
+        
         queryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
